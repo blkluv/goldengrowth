@@ -14,12 +14,10 @@ const orderedSites = featuredSites.sort(
 
 <ContentSection title="Proyectos" id="proyectos">
   <Fragment slot="lead">
-    Explora nuestra selección de proyectos <span class="text-primary"
-      >destacados</span
-    > que demuestran nuestra <span class="text-primary"
-      >experiencia y creatividad</span
-    > en marketing digital y desarrollo web.
+    Explore our selection of <span class="text-primary">highlighted</span> projects that showcase
+    our <span class="text-primary">experience and creativity</span> in digital marketing and web development.
   </Fragment>
+  
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {orderedSites.map((site) => <ShowcaseCard site={site} />)}

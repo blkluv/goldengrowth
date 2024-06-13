@@ -3,13 +3,11 @@ import ContentSection from "~/components/content-section.astro";
 const { site } = Astro;
 ---
 
-<ContentSection title="Contáctanos" id="contacto">
+<ContentSection title="Contact Us" id="contacto">
   <Fragment slot="lead">
     <span>
-      Conectate con nosotros y hagamos <span class="text-primary"
-        >realidad tus ideas</span
-      >. Estamos aca para <span class="text-primary">ayudarte</span> en todo lo que
-      necesites.
+      CRE Club is a private members-only club that requires an approved 
+      application to <span class="text-primary">subscribe</span>.
     </span>
   </Fragment>
   <section>
@@ -18,24 +16,24 @@ const { site } = Astro;
         class="space-y-8"
         accept-charset="utf-8"
         name="form-contacto"
-        action="https://formsubmit.co/goldengrowthcontact@gmail.com"
+        action="https://formsubmit.co/info@arvrtise.com"
         method="post"
       >
         <div class="flex-row lg:flex lg:gap-x-4">
-          <div class="lg: mb-6 w-full lg:mb-0">
+          <div class="lg:mb-6 w-full lg:mb-0">
             <label for="nombre" class="mb-2 block font-medium text-sm"
-              >Nombre</label
+              >Full Name</label
             >
             <input
               type="text"
               id="nombre"
               name="nombre"
               class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="Nombre completo"
+              placeholder="Full Name"
               required
             />
           </div>
-          <div class="lg: mb-6 w-full lg:mb-0">
+          <div class="lg:mb-6 w-full lg:mb-0">
             <label for="email" class="mb-2 block font-medium text-sm"
               >Email</label
             >
@@ -44,14 +42,14 @@ const { site } = Astro;
               id="email"
               name="email"
               class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="ejemplo@email.com"
+              placeholder="cre@blackrock.com"
               required
             />
           </div>
         </div>
         <div class="sm:col-span-2">
           <label for="mensaje" class="mb-2 block font-medium text-sm"
-            >Tu mensaje</label
+            >Your message</label
           >
           <textarea
             id="mensaje"
@@ -59,21 +57,21 @@ const { site } = Astro;
             minlength="10"
             name="mensaje"
             class="block max-h-60 min-h-24 w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-            placeholder="Contanos en que podemos ayudarte"
+            placeholder="Tell us how we can help you"
             required></textarea>
         </div>
         <button
           type="submit"
           class="min-w-72 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-600 px-5 py-3 text-center font-medium text-white duration-300 text-sm hover:scale-105 focus:outline-none focus:ring-4 mobile:min-w-96 md:min-w-176"
-          >Enviar mensaje</button
+          >Send message</button
         >
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value=`${site}` />
+        <input type="hidden" name="_next" value={`${site}`} />
         <input type="hidden" name="_template" value="box" />
         <input
           type="hidden"
           name="_cc"
-          value="tobiwinik@gmail.com,alanmar337@gmail.com,lukaportnoi993@gmail.com"
+          value="info@arvrtise.com"
         />
       </form>
     </div>
