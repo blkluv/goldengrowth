@@ -1,4 +1,40 @@
-/* TODO: consider creating <Button> and <GradientText> components */
+@media (min-width: 1024px) {
+  body {
+    cursor: none;
+  }
+
+  a, button {
+    cursor: none;
+  }
+
+  input, textarea {
+    cursor: none;
+  }
+
+  .cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: theme("colors.yellow.400");
+  }
+
+  .cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid theme("colors.yellow.500");
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 99999999;
+    pointer-events: none;
+  }
+}
+
 a,
 .btn {
   @apply transition-colors duration-200;
